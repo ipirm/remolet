@@ -1,70 +1,79 @@
-*{
+* {
 	padding: 0px;
 	margin: 0px;
 }
-body{
-	font-family: 'Open Sans',sans-serif;
+
+body {
+	font-family: 'Open Sans', sans-serif;
 }
-.opportunities{
+
+.opportunities {
 	margin-top: 60px;
 }
-.opportunities-title{
-color: #000000;
-font-family: "Lucida Console";
-font-size: 20px;
-font-weight: 400;
+
+.opportunities-title {
+	color: #000000;
+	font-family: "Lucida Console";
+	font-size: 20px;
+	font-weight: 400;
 }
-.opportunities-overlay{
+
+.opportunities-overlay {
 	margin-top: 32px;
 	border-top: 1px solid #dadada;
 	position: relative;
 	$this: &;
-	&__item{
+
+	&__item {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		padding: 18px 0px;
 		justify-content: center;
 		align-items: center;
-		
-		p{
-width: 61px;
-color: #000000;
-font-size: 14px;
-font-weight: 400;
+
+		p {
+			width: 61px;
+			color: #000000;
+			font-size: 14px;
+			font-weight: 400;
 			margin-top: 23px;
 		}
 	}
 }
-.opportunities-overlay::after{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 90%;
-    height: 1px;
-    background-color: #dadada;
-    top: 47%;
-    left: 15px;
-    right: 15px;
+
+.opportunities-overlay::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 90%;
+	height: 1px;
+	background-color: #dadada;
+	top: 47%;
+	left: 15px;
+	right: 15px;
 }
-.opportunities-overlay::before{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 1px;
-    height: 100%;
-    left: 50%;
-    background-color: #dadada;
-    top: 0px;
-    right: 0px;
+
+.opportunities-overlay::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 1px;
+	height: 100%;
+	left: 50%;
+	background-color: #dadada;
+	top: 0px;
+	right: 0px;
 }
-.variables-nav{
+
+.variables-nav {
 	$this: &;
-	&__item{
+
+	&__item {
 		/* Style for "Прямокутни" */
-width: 100%;
-height: 40px;
-background-color: #444444;
+		width: 100%;
+		height: 40px;
+		background-color: #444444;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -72,32 +81,122 @@ background-color: #444444;
 		justify-content: space-between;
 		padding: 0px 17px 0px 34px;
 		margin-bottom: 2px;
-		span{
-color: #ffffff;
-font-size: 16px;
-font-weight: 400;
+
+		span {
+			color: #ffffff;
+			font-size: 16px;
+			font-weight: 400;
 		}
 	}
 }
-.table{
+
+.table {
 	margin-bottom: 0px;
 	border: none !important;
-	td{
-color: #444444;
-font-family: "Foundry Sterling OT 3";
-font-size: 16px;
-font-weight: 500;
-line-height: 30px;
-		
-			padding: 15px 33px 10px 33px !important;
+
+	td {
+		color: #444444;
+		font-family: "Foundry Sterling OT 3";
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 30px;
+
+		padding: 15px 33px 10px 33px !important;
 	}
 }
-.active{
-	img{
+
+.active {
+	img {
 		transform: rotate(180deg);
 	}
 
 }
-.table-bordered{
+
+.table-bordered {
 	display: none;
+}
+
+.about {
+	margin-top: 28px;
+}
+
+.about-title {
+	width: 250px;
+	color: #000000;
+	font-family: "Open Sans SemiBold";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 26px;
+}
+
+.about-form {
+	width: 100%;
+	height: 308px;
+	background-color: #f5f6f7;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	display: flex;
+	padding: 28px 0px;
+	flex-direction: column;
+	align-items: center;
+	$this: &;
+
+	&__title {
+		width: 230px;
+		color: #000000;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 26px;
+		text-align: center;
+		margin-bottom: 8px;
+	}
+
+	&__input {
+		width: 238px;
+		height: 44px;
+		background-color: #fefefe;
+		border: none;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+		margin-top: 20px;
+		padding-left: 13px;
+	}
+
+	&__input::placeholder {
+		color: #000000;
+		font-family: "Open Sans";
+		font-size: 18px;
+		font-weight: 300;
+	}
+}
+
+.company {
+	margin-top: 46px;
+}
+
+.company-title {
+	color: #000000;
+	font-family: "Open Sans SemiBold";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 26px;
+	margin: auto;
+	text-align: center;
+}
+
+.company-content {
+	margin: 32px 0px;
+	font-family: "Open Sans SemiBold";
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.company-banner {
+	background-position: center;
+	height: 180px;
+	background-color: #dee1e6;
+	background-size: cover;
+	width: 100%;
 }
