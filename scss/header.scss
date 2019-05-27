@@ -1,0 +1,34 @@
+.header{
+	margin-top: 12px;
+}
+.header-main__schedule{
+color: #606060;
+font-size: 13px;
+font-weight: 400;
+line-height: 18px;
+	margin-bottom: 0px;
+}
+.header-main{
+	align-items: center;
+}
+.header-sub{
+	margin-top: 26px;
+	background-image: url(../img/bg-sub.png);
+	background-position: center;
+	background-size: cover;
+	height: 176px;
+	$this: &;
+	&__title{
+	
+width: 228px;
+height: auto;
+color: #010000;
+font-family: "Myriad Pro Regular";
+font-size: 22px;
+font-weight: 400;
+line-height: 28px;
+	}
+}
+.repair{
+	margin-top: 21px;
+}
