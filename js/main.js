@@ -9,5 +9,5 @@
     });
  $(".variables-nav__item").click(function() {
     $(this).toggleClass("active");
-    $(this).next(".table-bordered").slideToggle("slow");
+    $(this).next(".table-bordered").slideToggle("fast");
   });
